@@ -59,6 +59,7 @@ public class LeapMotionGesture : MonoBehaviour
     {
         palmVelocity = _hand.PalmVelocity.magnitude;
         palmDirection = _hand.PalmVelocity;
+
         Swipe(palmVelocity, palmDirection);
         Waving(palmVelocity, palmDirection);
         Finger(_hand);
